@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>food website design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+ <header>
+  <a href="#" class="logo"><i class="fa-solid fa-utensils"></i>Dinner In The Lake.</a>
+  <nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#dishes">Dishes</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#order">Order</a>
+  </nav>
+  <div class="icone">
+    <i class="fa-solid fa-bars" id="menu-bar"></i>
+    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+    <button class="like"><i class="fa-solid fa-heart"></i></button>
+    <i class="fa-solid fa-cart-shopping" ></i>
+   <input type="text" value="0" class="cartAmount" id="q1">
+  </div>
+
+<!-- <div class="cart">
+  <h2 class="cart-title">Your cart</h2>
+  <div class="cart-content">
+    <div class="cart-box">
+      <img src="https://www.salomon-foodworld.com/media/pages/sortiment/homestyle-angus-burger/2e7024359d-1676654623/homestyle-angus-burger-72dpi-freisteller-e2-600x500.jpg" alt=""  class=".cart-img">
+      <div class="detail-box">
+        <div class="cart-coffe-tittle">Black coffee</div>
+        <div class="cart-price"> $12.45</div>
+        <input type="number" name="" id="" value="1" class="cart-quantity">
+      </div>
+      <i class="bx bxs-trash-alt cart-remove"></i>
+    </div>
+  </div>
+  <div class="total">
+    <div class="total-title">total</div>
+    <div class="total-price">$0</div>
+  </div>
+  <button type="button" class="btn"> Buy Now</button>
+  <i class="bx bx-x" id="cart-close"></i>
+</div> -->
+
+
+
+
+ </header>
+<form action="" id="search-form">
+  <input type="search"  placeholder="search here.."name="" id="search-box">
+  <label for="search-box" class="fas fa-search"></label>
+  <i class="fas fa-times" id="close"></i>
+</form>
+<section class="home" id="home" >
+  <div class="swiper  home-slider">
+    <div class="swiper-wrapper wrapper">
+      <div class="swiper-slide slide ">
+        <div class="content">
+          <span>our special dish</span>
+          <h3> Mango Meringue Pie</h3>
+          <p>Lorem ipsum dolor sit amet Qui repellendus cupiditate quas assumenda harum. Voluptates, quibusdam adipisci.  eaque error praesentium?.</p>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="image">
+          <img src="https://www.compagniedesdesserts.com/wp-content/uploads/2022/10/octobre-475x306.jpg" alt="">
+        </div>
+      </div>
+<!-- 
+      <div class=" swiper-slide slide">
+        <div class="content">
+          <span>our special dish</span>
+          <h3>CHIKEN WITH GARLIC POTATOES AND ASPARAGUS </h3>
+          <p>Lorem ipsum dolor sit amet  ducimus!  amet ratione rem modi placeat cumque eius facilis, sed corrupti delectus ex nemo temporibus ea.</p>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="image">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/3/7/2/FNM_040116-Chicken-with-Garlic-and-Potatoes-and-Asparagus_s4x3.jpg.rend.hgtvcom.826.620.suffix/1457630339309.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+        <div class="content">
+          <span>our special dish</span>
+          <h3>GRILLED CHIKEN</h3>
+          <p>Lorem ipsum dolor sit amet consectetur Deserunt,  rem modi placeat cumque eius facilis, sed corrupti delectus ex nemo temporibus ea.</p>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="image">
+          <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/6/24/0/FNM_070118-Grilled-Thai-Chicken_s4x3.jpg.rend.hgtvcom.406.406.suffix/1529950501178.jpeg" alt="">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+        <div class="content">
+          <span>our special dish</span>
+          <h3>GRILLED SESAME-SOY FISH STEAKS</h3>
+          <p>Lorem ipsum dolor sit amet consectetur vero  placeat cumque eius facilis, sed corrupti delectus ex nemo temporibus ea.</p>
+          <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="image">
+          <img src="http://static1.squarespace.com/static/56524ff9e4b027b5078dcfb8/t/57874572e58c62a9969249d8/1468482943821/?format=1500w" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div> -->
+    </div>
+  </div>
+</section>
+
+
+
+<section class="dishes" id="dishes">
+  <h3 class="sub-heading">Our Dishes</h3>
+  <h1 class="heading">Popular dishes</h1>
+  <div class="box-container">
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="https://www.salomon-foodworld.com/media/pages/sortiment/homestyle-angus-burger/2e7024359d-1676654623/homestyle-angus-burger-72dpi-freisteller-e2-600x500.jpg" alt="">
+      <h3>tasty food</h3>
+      <div class="starts">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$15.99</span>
+      <a href="#" class="btn" onclick="increment()">add to cart</a>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbMqYwwTDmryE4fFySlSj1vAcXh2KJIJqSvQ&usqp=CAU" alt="">
+      <h3>tasty food</h3>
+      <div class="starts">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$27.99</span>
+      <a href="#" class="btn" onclick="increment()">add to cart</a>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="https://canadify.com/wp-content/uploads/2020/08/Boston-Pizza-Adds-New-Playoff-Platter.jpg" alt="">
+      <h3>tasty food</h3>
+      <div class="starts">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$30.11</span>
+      <a href="#" class="btn" onclick="increment()">add to cart</a>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKsMLyIoCxsLTc6EC0Yf7iYi1J9u92tBwovw&usqp=CAU" alt="">
+      <h3>tasty food</h3>
+      <div class="starts">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$7.80</span>
+      <a href="#" class="btn" onclick="increment()">add to cart</a>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="https://t3.ftcdn.net/jpg/03/89/65/26/360_F_389652616_pFrsTh0U1PVRD3uhlFGOqOB3DKj3cmHH.jpg" alt="">
+      <h3>tasty food</h3>
+      <div class="starts">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$5..20</span>
+      <a href="#" class="btn" onclick="increment()">add to cart</a>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="https://www.collinsdictionary.com/images/full/dessert_97357067.jpg" alt="">
+      <h3>tasty food</h3>
+      <div class="starts">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$3.49</span>
+      <a href="#" class="btn" onclick="increment()">add to cart</a>
+    </div>
+  </div>
+</section>
+<section class="about" id="about">
+  <h3 class="sub-heading">about us</h3>
+  <h1 class="heading">why choose us?</h1>
+  <div class="row">
+    <div class="image">
+      <img src="https://i0.wp.com/elkgrovelagunanews.com/wp-content/uploads/2022/10/burger.jpeg?fit=612%2C458&ssl=1" alt="">
+    </div>
+    <div class="content">
+      <h3>best food in the country</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ipsam? Consequuntur cupiditate iusto ratione reiciendis praesentium maiores nostrum quas necessitatibus. Quo officia rerum facilis repudiandae tempore odio eveniet esse similique.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quo fuga enim quis autem ipsa reprehenderit quod! Nostrum maxime aut ipsam, facilis velit magni, ullam nulla voluptate ut, laborum tempora.</p>
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-shipping-fast"></i>
+          <span>free delivery</span>
+        </div>
+        <div class="icons">
+          <i class="fas fa-dollar-sign"></i>
+          <span>easy payments</span>
+        </div>
+        <div class="icons">
+          <i class="fas fa-headset"></i>
+          <span>24/7 services</span>
+        </div>
+      </div>
+      <a href="#" class="btn">learn more</a>
+    </div>
+  </div>
+</section>
+<section class="menu" id="menu">
+  <h3 class="sub-heading">our menu</h3>
+  <h1 class="heading">today's speciality</h1>
+  <div class="box-container">
+    <div class="box">
+      <div class="image">
+        <img src="https://www.arts-et-gastronomie.com/wp-content/uploads/2022/12/Dessert-de-Noel-e1670412007686.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>delicious food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam id magnam voluptates molestias ducimus ipsum. Provident mollitia tempore doloremque possimus inventore ipsam consequatur repudiandae ullam. Ea earum nemo quasi.</p>
+        <a href="#" class="btn" onclick="increment()">add to cart</a>
+        <span class="pice">$12.99</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="https://i.pinimg.com/236x/dc/ca/ef/dccaefa60a20b4d7b32cbad4ffa45338.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>delicious food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam id magnam voluptates molestias ducimus ipsum. Provident mollitia tempore doloremque possimus inventore ipsam consequatur repudiandae ullam. Ea earum nemo quasi.</p>
+        <a href="#" class="btn" onclick="increment()">add to cart</a>
+        <span class="pice">$12.99</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="https://i.pinimg.com/236x/26/c7/0b/26c70bb22fb6f34adc999d59b4be4390--cinnamon-ice-cream-top-restaurants.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>delicious food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam id magnam voluptates molestias ducimus ipsum. Provident mollitia tempore doloremque possimus inventore ipsam consequatur repudiandae ullam. Ea earum nemo quasi.</p>
+        <a href="#" class="btn" onclick="increment()">add to cart</a>
+        <span class="pice">$12.99</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="https://i.pinimg.com/originals/4d/3e/fe/4d3efe057d79c791a44283c216e3b9a7.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>delicious food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam id magnam voluptates molestias ducimus ipsum. Provident mollitia tempore doloremque possimus inventore ipsam consequatur repudiandae ullam. Ea earum nemo quasi.</p>
+        <a href="#" class="btn" onclick="increment()">add to cart</a>
+        <span class="pice">$12.99</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="https://i.pinimg.com/474x/64/22/d7/6422d71a5b3a14d94d7f52b51ffe5ec2--gourmet-desserts-plated-desserts.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>delicious food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam id magnam voluptates molestias ducimus ipsum. Provident mollitia tempore doloremque possimus inventore ipsam consequatur repudiandae ullam. Ea earum nemo quasi.</p>
+        <a href="#" class="btn" onclick="increment()">add to cart</a>
+        <span class="pice">$12.99</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="https://www.my-vb.com/sites/default/files/styles/recette_a_la_u/public/2020-07/Eran_Shvartzbard_cre%CC%80me_des_anges.jpg?itok=wDl4L0xP" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>delicious food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam id magnam voluptates molestias ducimus ipsum. Provident mollitia tempore doloremque possimus inventore ipsam consequatur repudiandae ullam. Ea earum nemo quasi.</p>
+        <a href="#" class="btn" onclick="increment()">add to cart</a>
+        <span class="pice">$12.99</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="https://www.arts-et-gastronomie.com/wp-content/uploads/2018/04/AEG_CHERRYSTONE_AUBERGE_ILE_-186-1-e1611745005858.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>delicious food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam id magnam voluptates molestias ducimus ipsum. Provident mollitia tempore doloremque possimus inventore ipsam consequatur repudiandae ullam. Ea earum nemo quasi.</p>
+        <a href="#" class="btn" onclick="increment()">add to cart</a>
+        <span class="pice">$12.99</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="https://i.pinimg.com/236x/98/e8/71/98e871b57f014afc25ee111a8413ccb1.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>delicious food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam id magnam voluptates molestias ducimus ipsum. Provident mollitia tempore doloremque possimus inventore ipsam consequatur repudiandae ullam. Ea earum nemo quasi.</p>
+        <a href="#" class="btn" onclick="increment()">add to cart</a>
+        <span class="pice">$12.99</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="https://www.my-vb.com/sites/default/files/styles/recette_a_la_u/public/2020-06/Marc-balaguer-fabra-multicolored-plated-dessert.jpg?itok=jYNC3pVd" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>delicious food</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nam id magnam voluptates molestias ducimus ipsum. Provident mollitia tempore doloremque possimus inventore ipsam consequatur repudiandae ullam. Ea earum nemo quasi.</p>
+        <a href="#" class="btn" onclick="increment()">add to cart</a>
+        <span class="pice">$12.99</span>
+      </div>
+    </div>
+    </div>
+</section>
+<section class="order" id="order">
+  <h3 class="sub-heading">Order now</h3>
+  <h1 class="heading">free and fast</h1>
+  <form action="">
+    <div class="inputBox">
+      <div class="input">
+        <span>your name</span>
+        <input type="text" placeholder="enter your name">
+      </div>
+      <div class="input">
+        <span>your number</span>
+        <input type="number" placeholder="enter your number">
+      </div>
+    </div>
+
+    <div class="inputBox">
+      <div class="input">
+        <span>your order</span>
+        <input type="text" placeholder="enter food name">
+      </div>
+      <div class="input">
+        <span>additional food</span>
+        <input type="test" placeholder="extra with food">
+      </div>
+    </div>
+
+    <div class="inputBox">
+      <div class="input">
+        <span>How much</span>
+        <input type="text" placeholder="how many orders">
+      </div>
+      <div class="input">
+        <span>date and time</span>
+        <input type="datetime-local">
+      </div>
+    </div>
+
+    <div class="inputBox">
+      <div class="input">
+        <span>your address</span>
+        <textarea name=""  placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="input">
+      <span>your message</span>
+      <textarea name=""  placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+    </div>
+    </div>
+    <input type="submit" value="order now" class="btn">
+  </form>
+</section>
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>locations</h3>
+      <a href="#">tunis</a>
+      <a href="#">japan</a>
+      <a href="#">russia</a>
+      <a href="#">USA</a>
+      <a href="#">france</a>
+    </div>
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="#">Home</a>
+      <a href="#">dishes</a>
+      <a href="#">about</a>
+      <a href="#">menu</a>
+      <a href="#">order</a>
+    </div>
+    <div class="box">
+      <h3>contact info</h3>
+      <a href="#">+123-456-789</a>
+      <a href="#">+111-222-333</a>
+      <a href="#">saggadhouha@gmail.com</a>
+      <a href="#">saggadhouha94@gmail.com</a>
+      <a href="#">tunis-gabes</a>
+    </div>
+    <div class="box">
+      <h3>folow us</h3>
+      <a href="#">facebook</a>
+      <a href="#">instagram</a>
+      <a href="#">linkidin</a>
+      <a href="#">twitter</a>
+      <a href="#">tiktok</a>
+    </div>
+  </div>
+  <div class="credit">copyright @2023 by <span>Dr.Dhouha Sagga</span></div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
